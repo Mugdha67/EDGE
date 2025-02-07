@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Menu</title>
+</head>
+<body>
+    <h1>Food Menu</h1>
+    <ul>
+        {% for item in food_items %}
+            <li>{{ item.name }} - {{ item.price }} BDT</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
